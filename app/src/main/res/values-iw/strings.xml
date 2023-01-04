@@ -4,4 +4,8 @@
     <string name="Player1">שחקן 1</string>
     <string name="Player2">שחקן 2</string>
     <string name="Guide">השחקן הראשון שמגיע ל30 לחיצות מנצח במשחק</string>
+    <string name="Score">ניקוד</string>
+    <string name="GameFinish">סיום המשחק</string>
+    <string name="OK">אישור</string>
+    <string name="Won">ניצחת בסיבוב הזה</string>
 </resources>
