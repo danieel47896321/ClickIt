@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ClickIt</string>
+    <string name="Player1">Player1</string>
+    <string name="Player2">Player2</string>
+    <string name="Guide">First Player to Click 30 times win the game</string>
+</resources>
