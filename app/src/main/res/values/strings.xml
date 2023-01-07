@@ -2,9 +2,6 @@
     <string name="app_name">ClickIt</string>
     <string name="Player1">Player 1</string>
     <string name="Player2">Player 2</string>
-    <string name="Guide">First Player to Click 30 times win the game</string>
-    <string name="Score">Score</string>
-    <string name="GameFinish">Game Finish</string>
-    <string name="OK">OK</string>
-    <string name="Won">You won this round</string>
+    <string name="Counter">Counter</string>
+    <string name="ResetGame">Reset Game</string>
 </resources>

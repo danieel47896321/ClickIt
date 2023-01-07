@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,64 +19,60 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="11dp"
-        android:elevation="100dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header">
 
-        <TextView
-            android:id="@+id/textViewGuide"
-            style="@style/TextView_Style"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:layout_marginTop="20dp"
-            android:text="@string/Guide"
-            android:textColor="@color/default_color"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/header" />
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/textViewGuide">
-
-            <TextView
-                style="@style/TextView_Style"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Player1"
-                android:textColor="@color/default_color"
-                android:textSize="20sp" />
+                android:layout_gravity="center"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/buttonScorePlayer1"
-                style="@style/Button_Style"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Score" />
+                <TextView
+                    style="@style/TextView_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Player1"
+                    android:textColor="@color/default_color"
+                    android:textSize="20sp" />
 
-            <TextView
-                style="@style/TextView_Style"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Player2"
-                android:textColor="@color/default_color"
-                android:textSize="20sp" />
+                <Button
+                    android:id="@+id/buttonScorePlayer1"
+                    style="@style/Button_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Counter" />
 
-            <Button
-                android:id="@+id/buttonScorePlayer2"
-                style="@style/Button_Style"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Score" />
-        </LinearLayout>
+                <TextView
+                    style="@style/TextView_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Player2"
+                    android:textColor="@color/default_color"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/buttonScorePlayer2"
+                    style="@style/Button_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Counter" />
+
+                <Button
+                    android:id="@+id/buttonResetGame"
+                    style="@style/Button_Style"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/ResetGame" />
+            </LinearLayout>
+        </ScrollView>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
