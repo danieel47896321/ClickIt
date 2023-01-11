@@ -5,5 +5,5 @@ import androidx.lifecycle.ViewModel
 class MainModel: ViewModel() {
     var scorePlayer1 = 0
     var scorePlayer2 = 0
-    var updateID = "UpdatePlayersScore"
+    var updateID = "updateScore"
 }

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun mainWhenCase(id: String){
         when(id){
-            "UpdatePlayersScore" -> { updateScore(mainController.getScorePlayer1(), mainController.getScorePlayer2()) }
+            "updateScore" -> { updateScore(mainController.getScorePlayer1(), mainController.getScorePlayer2()) }
         }
     }
     private fun setButtons() {
