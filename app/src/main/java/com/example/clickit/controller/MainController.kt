@@ -1,12 +1,14 @@
 package com.example.clickit.controller
 
+import androidx.lifecycle.ViewModelProvider
 import com.example.clickit.MainActivity
 import com.example.clickit.model.MainModel
 
-class MainController(var mainModel: MainModel, var view: MainActivity) {
-    private fun getScorePlayer1(): Int { return mainModel.scorePlayer1 }
-    private fun getScorePlayer2(): Int { return mainModel.scorePlayer2 }
-    fun updateView(){ view.updateScore(getScorePlayer1(), getScorePlayer2()) }
+class MainController(var view: MainActivity) {
+    private var mainModel = ViewModelProvider(view)[MainModel::class.java]
+    fun getScorePlayer1(): Int { return mainModel.scorePlayer1 }
+    fun getScorePlayer2(): Int { return mainModel.scorePlayer2 }
+    fun updateView(){ view.mainWhenCase(mainModel.updateID) }
     fun updateScorePlayer1() {
         mainModel.scorePlayer1++
         updateView()
